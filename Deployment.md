@@ -6,10 +6,40 @@
 
 ![image](https://user-images.githubusercontent.com/59161665/113643275-91eced00-9647-11eb-8c69-2fc775bf2269.png)
 
-### Create a new Project and enable billing
-1.
+### Press the Dropdown Bar
+
 ![image](https://user-images.githubusercontent.com/59161665/113643532-28211300-9648-11eb-860c-0a8798b65593.png)
-2.
+
+### Press New Project 
+
 ![image](https://user-images.githubusercontent.com/59161665/113643590-45ee7800-9648-11eb-9679-f5424d90696f.png)
-3.
+
+### Set up the Project with a billing account
+
 ![image](https://user-images.githubusercontent.com/59161665/113643736-91a12180-9648-11eb-8480-10794049325e.png)
+
+### Go to IAM & Admin and select Service Accounts
+
+![image](https://user-images.githubusercontent.com/59161665/113645531-aaabd180-964c-11eb-9374-015a2bbd3468.png)
+
+### Create a Service Account
+
+![image](https://user-images.githubusercontent.com/59161665/113645673-ee9ed680-964c-11eb-8e58-3bb5f958ce23.png)
+
+### Go to IAM & Admin and select IAM
+
+![image](https://user-images.githubusercontent.com/59161665/113645783-27d74680-964d-11eb-9fc5-3ebba5191899.png)
+
+### Press Add
+
+![image](https://user-images.githubusercontent.com/59161665/113645839-43dae800-964d-11eb-8f89-d71639ce6864.png)
+
+### Enter the Service Account you created earlier, grant it the role of Kubernetes Engine Service Agent, and Press Save
+
+![image](https://user-images.githubusercontent.com/59161665/113645946-6ff66900-964d-11eb-879f-72e094ef6003.png)
+
+
+
+
+
+
