@@ -40,7 +40,7 @@ We will setup the GCP Project with a Service Account to enable Terraform to acce
 
 ![image](https://user-images.githubusercontent.com/59161665/113645946-6ff66900-964d-11eb-879f-72e094ef6003.png)
 
-### Done!
+## Done!
 
 We should be done with the setup on the GCP side 
 
@@ -87,7 +87,7 @@ When prompted for "yes", type yes and press enter.
 
 ![image](https://user-images.githubusercontent.com/59161665/113648407-307e4b80-9652-11eb-8d66-b6203238cba0.png)
 
-### Wait
+### Wait!
 
 The total time should be around 5-8 minutes:
 * Cluster: Around 3 minutes
@@ -96,6 +96,8 @@ The total time should be around 5-8 minutes:
 ![image](https://user-images.githubusercontent.com/59161665/113649124-7e478380-9653-11eb-8c85-fc0f174497aa.png)
 
 ![image](https://user-images.githubusercontent.com/59161665/113649237-af27b880-9653-11eb-8b8f-7eeef2469f32.png)
+
+You should get the above orange text if Terraform has beb successfully applied.
 
 ### Go to Google Kubernetes Engine(GKE) and go to Cluster
 
@@ -115,7 +117,7 @@ Click on "my-gke-cluster" and make sure the node pool is created with the given 
 
 Below the Node Pools is the number of nodes, which should be greater than or equal to your  mininmum node count and less than or equal to your maximum node count
 
-### Done!
+## Done!
 
 You have successfully created kubernetes clusters and node pools in GKE using Terraform!
 
