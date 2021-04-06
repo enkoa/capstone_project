@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+ # name of the claim for the pod to use to claim storageclass
+ name: mongodb-claim
+ labels:
+  # this app will use this claim
+  app: mongodb
+spec:
+ accessModes:
+ - ReadWriteOnce
+ resources:
+  requests:
+   storage: 1Gi

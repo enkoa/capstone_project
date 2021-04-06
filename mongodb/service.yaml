@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: mongodb-service
+ namespace: default
+spec:
+ selector:
+  # reference an existing deployed app
+  app: mongodb
+ ports:
+ - protocol: TCP
+   port: 80
+   targetPort: 27017

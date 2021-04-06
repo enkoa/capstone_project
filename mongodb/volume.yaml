@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+ # persistentvolume name to be reference by the claim
+ name: mongodb-pv
+ labels:
+  type: local
+spec:
+ # name of our defined storageclass
+ storageClassName: mongodb-storage
+ capacity:
+  storage: 1Gi
+ accessModes:
+ - ReadWriteOnce
+ hostPath:
+  path: "/mnt/mongo_data"
