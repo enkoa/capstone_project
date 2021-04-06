@@ -6,14 +6,14 @@ In this project, we will be deploying an instance of a containerized MongoDB to 
 
 ## Software Requirements
 
-* any provider to host kubernetes environments (AWS, GCP, Azure). This tutorial will only include GCP. This requires enable billing
+* any provider to host kubernetes environments (AWS, GCP, Azure). This tutorial will only include GCP. This requires enable billing.
 * gcloud CLI tool: https://cloud.google.com/sdk/docs/install
 * kubectl CLI tool: https://kubernetes.io/docs/tasks/tools/
 * Terraform CLI tool: https://www.terraform.io/downloads.html
 
 ## Deployment
 
-Check out Deployment.md on how to deploy this project
+Check out Deployment.md on how to deploy this project in a Linux VM
 
 ## Testing
 
