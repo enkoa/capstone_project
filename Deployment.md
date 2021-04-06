@@ -71,15 +71,55 @@ terraform init
 terraform plan
 ```
 
+This will print out the changes you want to make to your infrastructure.
+
+![image](https://user-images.githubusercontent.com/59161665/113648268-f4e38180-9651-11eb-9d6d-10e4d4751a25.png)
+
 ### Run Terraform apply
 
 ``` bash
 terraform apply
 ```
 
+![image](https://user-images.githubusercontent.com/59161665/113648347-1ba1b800-9652-11eb-9df7-8b211262d96c.png)
+
 When prompted for "yes", type yes and press enter.
 
+![image](https://user-images.githubusercontent.com/59161665/113648407-307e4b80-9652-11eb-8d66-b6203238cba0.png)
 
+### Wait
+
+The total time should be around 5-8 minutes:
+* Cluster: Around 3 minutes
+* Node Pool: Around 2-5 minutes
+
+![image](https://user-images.githubusercontent.com/59161665/113649124-7e478380-9653-11eb-8c85-fc0f174497aa.png)
+
+![image](https://user-images.githubusercontent.com/59161665/113649237-af27b880-9653-11eb-8b8f-7eeef2469f32.png)
+
+### Go to Google Kubernetes Engine(GKE) and go to Cluster
+
+![image](https://user-images.githubusercontent.com/59161665/113648649-8ce16b00-9652-11eb-897e-4fffd78c7fc7.png)
+
+### Check Cluster and Node Pool
+
+Make sure the cluster is created with the given name; in this case it is "my-gke-cluster".
+
+![image](https://user-images.githubusercontent.com/59161665/113649303-cf577780-9653-11eb-97b6-ff96435f6418.png)
+
+Click on "my-gke-cluster" and make sure the node pool is created with the given name; in this case it is "default-node-pool".
+
+![image](https://user-images.githubusercontent.com/59161665/113649380-f57d1780-9653-11eb-95bc-3bb0b460e6ce.png)
+
+![image](https://user-images.githubusercontent.com/59161665/113649457-15144000-9654-11eb-9b96-80506f60c118.png)
+
+Below the Node Pools is the number of nodes, which should be greater than or equal to your  mininmum node count and less than or equal to your maximum node count
+
+### Done!
+
+You have successfully created kubernetes clusters and node pools in GKE using Terraform!
+
+## Kubectl: Deploying MongoDB in k8s pod
 
 
 
