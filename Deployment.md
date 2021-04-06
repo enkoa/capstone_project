@@ -2,6 +2,8 @@
 
 ## Setting Up GCP Project
 
+We will setup the GCP Project with a Service Account to enable Terraform to access our GCP resources.
+
 ### Go to GCP Cloud Console
 
 ![image](https://user-images.githubusercontent.com/59161665/113643275-91eced00-9647-11eb-8c69-2fc775bf2269.png)
@@ -34,9 +36,19 @@
 
 ![image](https://user-images.githubusercontent.com/59161665/113645839-43dae800-964d-11eb-8f89-d71639ce6864.png)
 
-### Enter the Service Account you created earlier, grant it the role of Kubernetes Engine Service Agent, and Press Save
+### Enter the created Service Accounts and Grant it the role of Kubernetes Engine Service Agent
 
 ![image](https://user-images.githubusercontent.com/59161665/113645946-6ff66900-964d-11eb-879f-72e094ef6003.png)
+
+### Done!
+
+We should be done with the setup on the GCP side 
+
+## Terraform: Cluster Deployment
+
+In this section, we will create the GKE cluster and node pool using Terraform
+
+### 
 
 
 
