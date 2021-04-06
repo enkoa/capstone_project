@@ -1,37 +1,31 @@
-provider "google" {
-	credentials	= file("credentials.json")
-	project		= var.project_id
-	region		= var.region
-}
-
 module "gke" {
-	source 			= "terraform-google-modules/kubernetes-engine/google//modules/private-cluster"
+	source 				= "terraform-google-modules/kubernetes-engine/google//modules/private-cluster"
 
 	project_id			= var.project_id
 	name				= var.cluster_name
-	region			= var.region
-	network			= var.network
+	region				= var.region
+	network				= var.network
 	subnetwork			= var.subnetwork
-	ip_range_pods		= var.ip_range_pods
-	ip_range_services	= var.ip_range_services
+	ip_range_pods			= var.ip_range_pods
+	ip_range_services		= var.ip_range_services
 
-	create_service_account = false
-	remove_default_node_pool = true
+	create_service_account 		= false
+	remove_default_node_pool 	= true
 
 	node_pools = [
 		{
 			name 			= "default-node-pool"
-			machine_type 	= var.machine_type
+			machine_type 		= var.machine_type
 			min_count		= var.min_count
 			max_count		= var.max_count
-			disk_size_gb 	= var.disk_size_gb
+			disk_size_gb 		= var.disk_size_gb
 			disk_type		= var.disk_type
 			image_type		= var.image_type
-			auto_repair	= true
-			auto_upgrade	= true
-			service_account = var.service_account
-			preemptible	= true
-			initial_node_count = var.initial_node_count
+			auto_repair		= true
+			auto_upgrade		= true
+			service_account 	= var.service_account
+			preemptible		= true
+			initial_node_count 	= var.initial_node_count
 		},
 	]
 	node_pools_oauth_scopes = {
