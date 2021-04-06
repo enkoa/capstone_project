@@ -121,6 +121,11 @@ You have successfully created kubernetes clusters and node pools in GKE using Te
 
 ## Kubectl: Deploying MongoDB in k8s pod
 
+In this section, we will connect kubectl to our cluster that was previously created in GKE. Then we will create StorageClass, PersistentVolume, and PersistentVolumeClaim for the MongDB pod. This allow its content to persist even after pod shutdown. Then we will proceed to deploy the MongoDB pod.
+
+### Connecting kubectl to your GKE Cluster
+
+![image](https://user-images.githubusercontent.com/59161665/113649955-024e3b00-9655-11eb-902d-42e73513df22.png)
 
 
 
