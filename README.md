@@ -18,3 +18,7 @@ Check out Deployment.md on how to deploy this project in a Linux VM
 ## Testing
 
 Check out Test.md on how to test if this project work
+
+## Destroy
+
+Check out Destroy.md on how to shutdown pods and destoy infrastructure.
