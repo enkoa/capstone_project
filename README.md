@@ -11,16 +11,10 @@ In this project, we will be deploying an instance of a containerized MongoDB to 
 * kubectl CLI tool: https://kubernetes.io/docs/tasks/tools/
 * Terraform CLI tool: https://www.terraform.io/downloads.html
 
-## Setting Up GCP Project
+## Deployment
 
-### Go to GCP Cloud Console
+Check out Deployment.md on how to deploy this project
 
-![image](https://user-images.githubusercontent.com/59161665/113643275-91eced00-9647-11eb-8c69-2fc775bf2269.png)
+## Testing
 
-### Create a new Project and enable billing
-1.
-![image](https://user-images.githubusercontent.com/59161665/113643532-28211300-9648-11eb-860c-0a8798b65593.png)
-2.
-![image](https://user-images.githubusercontent.com/59161665/113643590-45ee7800-9648-11eb-9679-f5424d90696f.png)
-3.
-![image](https://user-images.githubusercontent.com/59161665/113643736-91a12180-9648-11eb-8480-10794049325e.png)
+Check out Test.md on how to test if this project work
