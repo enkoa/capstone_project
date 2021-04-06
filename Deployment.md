@@ -171,14 +171,86 @@ make storage
 make deploy
 ```
 
-![image](https://user-images.githubusercontent.com/59161665/113658044-e357a500-9664-11eb-94b3-12e9ac2afeed.png)
+![image](https://user-images.githubusercontent.com/59161665/113658152-1e59d880-9665-11eb-9036-6fab3f64f970.png)
 
-### 
+### Check to make sure your result was made
 
+#### StorageClass
 
+```
+kubectl get storageclass
+```
 
+![image](https://user-images.githubusercontent.com/59161665/113658450-b1930e00-9665-11eb-9130-8810f1399386.png)
 
+#### PersistentVolume
 
+```
+kubectl get persistentvolume
+```
+
+![image](https://user-images.githubusercontent.com/59161665/113658415-a2ac5b80-9665-11eb-8af8-e2a00e44a65e.png)
+
+#### PersistentVolumeClaim
+
+```
+kubectl get persistentvolumeclaim
+```
+
+![image](https://user-images.githubusercontent.com/59161665/113658551-e1daac80-9665-11eb-8793-c3871853f54c.png)
+
+#### Secret
+
+```
+kubectl get secret
+```
+![image](https://user-images.githubusercontent.com/59161665/113658610-f454e600-9665-11eb-9c9d-5fc2d4aabe47.png)
+
+#### Deployment(This is also checking to see if the k8s pod has been launched)
+
+```
+kubectl get deployment
+```
+![image](https://user-images.githubusercontent.com/59161665/113658635-0040a800-9666-11eb-8220-20d15d0926f9.png)
+
+#### Service
+
+```
+kubectl get service
+```
+![image](https://user-images.githubusercontent.com/59161665/113658711-25cdb180-9666-11eb-8b71-661a6b760302.png)
+
+### Check on GKE
+
+You can click on any of the following deployment to get more information about them, though they'll mostly contain information already provided by the yaml file.
+
+#### Secret
+
+![image](https://user-images.githubusercontent.com/59161665/113658976-b5736000-9666-11eb-9e45-41027f9ff0a7.png)
+
+#### StorageClass
+
+![image](https://user-images.githubusercontent.com/59161665/113658843-704f2e00-9666-11eb-8bcb-9948d946d7ed.png)
+
+#### PersistentVolumeClaim
+
+![image](https://user-images.githubusercontent.com/59161665/113658880-82c96780-9666-11eb-965b-02a69b2211c7.png)
+
+#### Service
+
+![image](https://user-images.githubusercontent.com/59161665/113658909-9aa0eb80-9666-11eb-9bf2-ee1393885ceb.png)
+
+#### Pod
+
+![image](https://user-images.githubusercontent.com/59161665/113658786-4dbd1500-9666-11eb-81f1-53c1ea365887.png)
+
+## Done!
+
+You have successfully deployed a MongoDB container pod in the Google's Kubernetes Engine!
+
+To test the MongoDB pod for data persistency between shutdown, check out the Test.md file.
+
+# Shutdown Deployment
 
 
 
