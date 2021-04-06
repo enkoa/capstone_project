@@ -47,7 +47,7 @@ variable "ip_range_services" {
 	default		= ""
 }
 variable "network" { 
-	default 		= "default"
+	default 	= "default"
 }
 variable "subnetwork" {
 	default		= ""
