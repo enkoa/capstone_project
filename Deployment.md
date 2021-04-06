@@ -129,5 +129,33 @@ In this section, we will connect kubectl to our cluster that was previously crea
 
 ![image](https://user-images.githubusercontent.com/59161665/113649955-024e3b00-9655-11eb-902d-42e73513df22.png)
 
+![image](https://user-images.githubusercontent.com/59161665/113656032-9e317400-9660-11eb-805c-b7f5b0b78246.png)
+
+Run the command given by the GKE. In my project the command would be:
+
+![image](https://user-images.githubusercontent.com/59161665/113656153-df298880-9660-11eb-97cc-5a510b68cdea.png)
+
+### Check your connection
+
+Use the following command to check that your kubectl has been configured correctly:
+
+```bash
+kubectl config get-contexts
+```
+
+![image](https://user-images.githubusercontent.com/59161665/113656386-670f9280-9661-11eb-9948-e6dd43b1a667.png)
+
+###
+
+
+
+
+
+
+
+
+
+
+
 
 
