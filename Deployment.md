@@ -46,9 +46,38 @@ We should be done with the setup on the GCP side
 
 ## Terraform: Cluster Deployment
 
-In this section, we will create the GKE cluster and node pool using Terraform
+In this section, we will create the GKE cluster and node pool using Terraform.
+Make sure your terraform binary file is in the same folder as your terraform file.
 
-### 
+### GCP information
+
+Open the variables.tf file:
+* Enter your GCP Project ID by overwriting REPLACE_ME 
+* Enter your Service account as shown in the member section of the IAM page by overwriting REPLACE_ME
+
+### Run Terraform init
+
+``` bash
+terraform init
+```
+
+![image](https://user-images.githubusercontent.com/59161665/113648055-99b18f00-9651-11eb-837b-0c50458f790c.png)
+
+![image](https://user-images.githubusercontent.com/59161665/113648095-a9c96e80-9651-11eb-97cd-ae15009b65a6.png)
+
+### Run Terraform plan
+
+``` bash
+terraform plan
+```
+
+### Run Terraform apply
+
+``` bash
+terraform apply
+```
+
+When prompted for "yes", type yes and press enter.
 
 
 
