@@ -21,4 +21,4 @@ Check out Test.md on how to test if this project work
 
 ## Destroy
 
-Check out Destroy.md on how to shutdown pods and destoy infrastructure.
+Check out Destroy.md on how to shutdown pods and destroy infrastructure.
