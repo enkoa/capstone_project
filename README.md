@@ -15,3 +15,10 @@ In this project, we will be deploying an instance of a containerized MongoDB to 
 
 ### Go to GCP Cloud Console
 
+![image](https://user-images.githubusercontent.com/59161665/113643275-91eced00-9647-11eb-8c69-2fc775bf2269.png)
+
+### Create a new Project
+
+![image](https://user-images.githubusercontent.com/59161665/113643532-28211300-9648-11eb-860c-0a8798b65593.png)
+
+![image](https://user-images.githubusercontent.com/59161665/113643590-45ee7800-9648-11eb-9679-f5424d90696f.png)
