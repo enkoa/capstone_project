@@ -145,7 +145,37 @@ kubectl config get-contexts
 
 ![image](https://user-images.githubusercontent.com/59161665/113656386-670f9280-9661-11eb-9948-e6dd43b1a667.png)
 
-###
+### Go into the mongodb directory
+
+```bash
+cd mongodb
+```
+
+### Deploy the pod
+
+Apply the yaml file in the following order:
+
+```bash
+kubectl apply -f storage.yaml
+kubectl apply -f volume.yaml
+kubectl apply -f volumeclaim.yaml
+kubectl apply -f secret.yaml
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+```
+
+For convience, a Makefile is already been made and can run the yaml file in those order as well:
+
+```bash
+make storage
+make deploy
+```
+
+![image](https://user-images.githubusercontent.com/59161665/113658044-e357a500-9664-11eb-94b3-12e9ac2afeed.png)
+
+### 
+
+
 
 
 
