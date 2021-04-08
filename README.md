@@ -1,4 +1,4 @@
-# Capstone Project for Software Engineering
+# Group 2 - Capstone Project for Software Engineering
 
 ## Description
 
