@@ -15,19 +15,23 @@ variable "region" {
 variable "cluster_name" {
 	default		= "my-gke-cluster"
 }
+
 # set of virtualization hardward. 
 # More detail on different machine types: https://cloud.google.com/compute/docs/machine-types
 variable "machine_type" {
 	default		= "n1-standard-1"
 }
+
 # minimum number of nodes. Minimum is 0.
 variable "min_count" {
 	default		= 1
 }
+
 # maximum number of nodes. GKE standard max is 1000 nodes per cluster. 
 variable "max_count" {
 	default		= 3
 }
+
 # Size of the disk_type
 # For zonal "pd-standard": minimum is 10GB, maximum is 64TB
 # For regional "pd-standard": minimum is 200GB, maximum is 64TB
@@ -35,6 +39,7 @@ variable "max_count" {
 variable "disk_size_gb" {
 	default		= 50
 }
+
 # type of persistent disk(pd) for the node
 # For different type of persistent disk: https://cloud.google.com/kubernetes-engine/docs/how-to/custom-boot-disks
 variable "disk_type" {
@@ -45,21 +50,34 @@ variable "disk_type" {
 variable "image_type" {
 	default		= "COS"
 }
+
 # starting number of node if your gke cannot support up to the maximum number of nodes
 variable "initial_node_count" {
 	default		= 1
 }
+
 # Google Cloud Platform IAM account
 variable "service_account" {
 	default		= "REPLACE_ME"
 }
 
+# Range of the IP for each pods. This will depend on your number of nodes and pods
+# For more information: https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips
+# Blank or "" specify default given range.
 variable "ip_range_pods" { 
 	default 	= ""
 }
+
+# Range for the IP range of services. This will depend on your number of services
+# For more information: https://cloud.google.com/kubernetes-engine/docs/concepts/alias-ips
+# Blank or "", specifiy default range
 variable "ip_range_services" {
 	default		= ""
 }
+
+# Type of network
+# For different type of network: https://cloud.google.com/kubernetes-engine/docs/concepts/network-overview
+# by default or "", all pods have a default network of being able to communicate to each other freely
 variable "network" { 
 	default 	= "default"
 }
