@@ -13,7 +13,7 @@ In this project, we will be deploying an instance of a containerized MongoDB to 
 
 ## Learning
 
-Below is a Udemy's 30 day course that teaches from scratch the basics of Docker and Kubernetes for beginners.
+Below is a Udemy's 30 day course that teaches from scratch the basics of Docker and Kubernetes for beginners. The courses utilizes AWS's EKS.
 
 https://www.udemy.com/course/devops-with-docker-kubernetes-and-azure-devops
 
