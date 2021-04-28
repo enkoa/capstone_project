@@ -13,9 +13,15 @@ In this project, we will be deploying an instance of a containerized MongoDB to 
 
 ## Learning
 
-Below is a Udemy's 30 day course that teaches from scratch the basics of Docker and Kubernetes for beginners. The courses utilizes AWS's EKS.
+Below is a Udemy's 21 hour worth of video course that teaches from scratch the basics of Docker and Kubernetes for beginners. The courses utilizes AWS's EKS.
 
 https://www.udemy.com/course/devops-with-docker-kubernetes-and-azure-devops
+
+Below is the Terraform tutorial provided by HashiCorp:
+
+https://learn.hashicorp.com/terraform
+
+Additionally, there is a small guestbook tutorial on Kubernetes Engine page in the Google Cloud Platform. This tutorial shows how to launch a cluster, deploy a pod, creat, and expose the pod's service to a front-end application.
 
 ## Deployment
 
