@@ -11,6 +11,12 @@ In this project, we will be deploying an instance of a containerized MongoDB to 
 * kubectl CLI tool: https://kubernetes.io/docs/tasks/tools/
 * Terraform CLI tool: https://www.terraform.io/downloads.html
 
+## Learning
+
+Below is a Udemy's 30 day course that teaches from scratch the basics of Docker and Kubernetes for beginners.
+
+https://www.udemy.com/course/devops-with-docker-kubernetes-and-azure-devops
+
 ## Deployment
 
 Check out Deployment.md on how to deploy this project in a Linux VM
